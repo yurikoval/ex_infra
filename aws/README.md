@@ -9,7 +9,9 @@ What this does:
 
 # Prerequisites
 
-1. Set up your custom AMI with Erlang and Elixir installed for faster builds.
+1. Install required terraform plugins `terraform init`
+
+2. Set up your custom AMI with Erlang and Elixir installed for faster builds.
 
 Using Amazon's Linux instance `ami-0ce71448843cb18a1`:
 
