@@ -1,70 +1,70 @@
 variable "aws_access_key" {
-  type = "string"
+  type = string
 }
 
 variable "aws_secret_key" {
-  type = "string"
+  type = string
 }
 
 variable "aws_region" {
   default     = "us-east-1"
   description = "Region used to deploy"
-  type        = "string"
+  type        = string
 }
 
 variable "instance_type" {
   default     = "t2.micro"
   description = "Instance type"
-  type        = "string"
+  type        = string
 }
 
 variable "subnet_availability_zone" {
   default     = "us-east-1"
   description = "Avaiability zone within region"
-  type        = "string"
+  type        = string
 }
 
 variable "tags_name" {
   default     = "elixir-app"
   description = "Tags resource with this string for identification"
-  type        = "string"
+  type        = string
 }
 
 variable "default_ami" {
   default     = "ami-0ce71448843cb18a1"
   description = "Default OS that is used for ec2 instance"
-  type        = "string"
+  type        = string
 }
 
 variable "ami_owner_id" {
   default     = "amazon"
   description = "AMI owner ID used for finding AMI to use for ec2. e.g. amazon or self"
-  type        = "string"
+  type        = string
 }
 
 variable "ami_key_pair_name" {
   description = "Name of the .pem file located in ~/.ssh/ directory for authenticating to ec2 instance"
-  type        = "string"
+  type        = string
 }
 
 variable "ec2_user" {
   default     = "ec2-user"
   description = "Default ec2 user used for SSHing into the instance"
-  type        = "string"
+  type        = string
 }
 
 variable "git_repo" {
   description = "git repo location of the app e.g. https://deploy:token@github.com/yurikoval/hello_world.git"
-  type        = "string"
+  type        = string
 }
 
 variable "route53_public_zone_id" {
   description = "ID of the public zone id used for DNS"
-  type        = "string"
+  type        = string
 }
 
 variable "public_dns" {
   default     = "app"
   description = "Subdomain name used along with route53_public_zone_id"
-  type        = "string"
+  type        = string
 }
