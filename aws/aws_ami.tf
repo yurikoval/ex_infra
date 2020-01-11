@@ -3,8 +3,8 @@ data "aws_ami" "linux" {
 
   filter {
     name   = "image-id"
-    values = ["${var.default_ami}"]
+    values = [var.default_ami]
   }
 
-  owners = ["${var.ami_owner_id}"]
+  owners = [var.ami_owner_id]
 }
