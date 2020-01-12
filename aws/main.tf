@@ -99,12 +99,12 @@ resource "null_resource" "app" {
   }
 
   provisioner "file" {
-    source      = "../.env.prod"
+    source      = "../../.env.prod"
     destination = "/tmp/.env"
   }
 
   provisioner "file" {
-    source      = "../config/dev.exs"
+    source      = "../../config/dev.exs"
     destination = "/tmp/dev.exs"
   }
 }
